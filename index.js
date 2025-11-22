@@ -19,7 +19,7 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb+srv://jimamuto:pass@backenddb.bcdv7yi.mongodb.net/?appName=BackendDB')
+mongoose.connect('mongodb://')
   .then(() => console.log('Connected to your database'));
 
 // Add a simple test route
