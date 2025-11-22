@@ -1,8 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
+
+
 const productroute = require('./routes/product.routes');
 const categoryroute = require('./routes/category.routes');
-const product= require('./models/product.model');
+const orderroute = require('./routes/order.routes');
+const userroute = require('./routes/user.routes');
+
 const app = express();
 
 
@@ -23,6 +27,8 @@ app.listen(3000, () => {
 // //route to any routes in the system
  app.use('/api/products', productroute);
  app.use('/api/categories',categoryroute);
+ app.use('/api/orders', orderroute);
+ app.use('/api/users',userroute);
 
 
 
