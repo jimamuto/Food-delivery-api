@@ -1,0 +1,4 @@
+index.js → imports → routes/ 
+routes/ → imports → controllers/
+controllers/ → imports → models/
+models/ → imports → mongoose
